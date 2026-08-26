@@ -99,10 +99,63 @@
     }
 }
 
+    @keyframes box-mover {
+        0% {
+            left: 0;
+            width: 300px;
+        }
+        100% {
+            left: 1000px;
+            width: 300px;
+        }
+    }
+    .box-mover {
+        width: 400px;
+        position: relative;
+        animation-name: box-mover;
+        animation-duration: 6s;
+        animation-iteration-count: 100;
+        animation-direction: alternate;
+    }
+    .box-mover:hover {
+        animation-play-state: paused;
+    }
 
+    .salom {
+        position: sticky;
+        top: 0;
+        float: left;
+        width: 250px;
+        font-size: 30px;
+        animation-name: salom;
+        animation-duration: 40s;
+        animation-iteration-count: 110;
+        animation-direction: alternate;
+    }
+
+    .salom:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes salom {
+        0% {
+        position: sticky;
+        top: 0;
+        font-size: 30px;  
+        margin-top: 10px;
+        }
+
+        100% {
+        position: sticky;
+        top: 0;
+        font-size: 30px; 
+        margin-top: 760px;
+        }
+    } 
 
 </style>
 <script>
+    alert('Salom')
     const language = 
     document.getElementById("language");
 
@@ -121,8 +174,18 @@
     });
 </script>
 <body>
+    <div class="salom">
+        <div class="box" style="float: left;">
+            <img src="imagesvictus4.jpeg" alt="" style="border-radius: 10px;">
+            <p class="title">Aksiya</p>
+            <p style="font-size: 20px; color: green;">Narxi: 15 000 000</p>
+            <p style="font-size: 15px; color: red;">Eski narxi: <del>25 000 000</del></p>
+            <a href="form.html"><button class="button is-fullwidth is-success mt-2"><i class="fas fa-cart-plus" style="margin-top: 2px; margin-right: 2px;"></i>So'tib olish</button></a>
+        </div>
+    </div>
 
-    <div class="container my-5 px-3">
+
+    <div class="container my-5 px-3" style="float: left;">
 
 
         <div class="nav2">
@@ -167,6 +230,17 @@
 
      <hr style="width: 100%; margin-top: 55px;">
 
+        
+            
+                    <div class="box-mover" >
+                        <img src="Screenshot from 2026-08-16 17.21.29.png" alt="" style="border-radius: 10px;">
+                        <p class="ml-6">Dasdurlashni biz bilan organing!</p>
+                        <a href="https://itedu2.netlify.app"><button class="button is-outlined is-link is-rounded mt-2 ml-6">Saytga o'tish</button></a>
+                    </div>
+                
+      
+
+
 
                     <p class="title" style="display: flex; justify-content: center;">HP</p>
                     <div class="columns">
@@ -174,7 +248,7 @@
                 <div class="box has-background-red">
                     <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                     <div style="display: flex; justify-content: center;">
-                        <img src="cl9LmxkvW7kOkbR1uEQPsJmens3gpyPSx8QLwdFu.jpeg" alt="" style="width: 170px;" class="mt-5 ml-3 ">
+                        <img src="cl9LmxkvW7kOkbR1uEQPsJmens3gpyPSx8QLwdFu.jpeg" alt="" style="width: 170px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                     </div>
                     <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook HP Laptop </p>
                     <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:AMD Ryzen 7 7330U</p>
@@ -188,7 +262,7 @@
                     <div class="box" id="Lenovo">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                        <img src="images.jpeg" alt="" style="width: 170px; " class="mt-2 ml-3 ">
+                        <img src="images.jpeg" alt="" style="width: 170px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook HP</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:AMD Ryzen 5 7330U</p>
@@ -202,7 +276,7 @@
                     <div class="box" id="Lenovo">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                        <img src="imageshp4.jpeg" alt="" style="width: 170px; " class="mt-2 ml-3 ">
+                        <img src="imageshp4.jpeg" alt="" style="width: 170px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">HP Laptop</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">intel core 5</p>
@@ -216,7 +290,7 @@
                     <div class="box" id="Lenovo">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                        <img src="imageshp3.jpeg" alt="" style="width: 170px; " class="mt-6 ml-3 ">
+                        <img src="imageshp3.jpeg" alt="" style="width: 170px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">HP</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">intel core 3</p>
@@ -239,7 +313,7 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="a40c8926-photo_3_2025-09-18_20-31-36 (1).jpg" alt="" style="width: 170px;" class="mt-3 ml-3 ">
+                            <img src="a40c8926-photo_3_2025-09-18_20-31-36 (1).jpg" alt="" style="width: 170px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Lenovo v15</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 7 ultra</p>
@@ -254,7 +328,7 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="download.avif" alt="" style="width: 170px;" class="mt-6 ml-3 ">
+                            <img src="download.avif" alt="" style="width: 170px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Lenovo </p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 5</p>
@@ -269,12 +343,12 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="images (4).jpeg" alt="" style="width: 170px;" class="mt-3 ml-3 ">
+                            <img src="images (4).jpeg" alt="" style="width: 170px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Lenovo</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 9 ultra</p>
                         <h2 class="has-text-success is-size-6" style="display: flex; justify-content: center;">Narxi: 18 000 000 so'm</h2>
-                        <p class="has-text-danger" style="display: flex; justify-content: center;">Eski narxi:<del>  000 000 so'm</del></p>
+                        <p class="has-text-danger" style="display: flex; justify-content: center;">Eski narxi:<del>  20 000 000 so'm</del></p>
 
                          <a href="form.html"><button class="button is-success mt-3 ml-3 is-fullwidth"><i class="fas fa-cart-plus" style="margin-right: 5px;"></i>So'tib olish</button></a>
                     </div>
@@ -284,7 +358,7 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="images (5).jpeg" alt="" style="width: 150px; height: 175px;" class="mt- ml-3 ">
+                            <img src="images (5).jpeg" alt="" style="width: 150px; height: 175px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Lenovo v15</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 9 </p>
@@ -306,7 +380,7 @@
                     <div class="box">
                        <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="images (2).jpeg" alt="" style="width: 170px; height: 170px;" class=" ml-3 ">
+                            <img src="images (2).jpeg" alt="" style="width: 170px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Asus Vivobook</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 7 ultra</p>
@@ -320,7 +394,7 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="images (1).jpeg" alt="" style="width: 120px;" class="mt-2 ml-3 ">
+                            <img src="images (1).jpeg" alt="" style="width: 120px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Asus VivoBook</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 9 ultra</p>
@@ -335,7 +409,7 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="images (3).jpeg" alt="" style="width: 120px;" class="mt-2 ml-3 ">
+                            <img src="images (3).jpeg" alt="" style="width: 120px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Asus</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 3</p>
@@ -350,7 +424,7 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="images.jpeg" alt="" style="width: 120px;" class="mt-6 ml-3 ">
+                            <img src="images.jpeg" alt="" style="width: 120px; height: 170px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Asus</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 5</p>
@@ -369,7 +443,7 @@
                         
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="images (6).jpeg" alt="" style="width: 120px;" class="mt-5 ml-3 ">
+                            <img src="images (6).jpeg" alt="" style="width: 120px; height: 110px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Victus</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 9</p>
@@ -385,7 +459,7 @@
                         
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="images (7).jpeg" alt="" style="width: 120px; height: 110px;" class=" ml-3 ">
+                            <img src="images (7).jpeg" alt="" style="width: 120px; height: 110px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Victus</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 5</p>
@@ -401,7 +475,7 @@
                         
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="images (8).jpeg" alt="" style="width: 120px; height: 110px;" class=" ml-3 ">
+                            <img src="images (8).jpeg" alt="" style="width: 120px; height: 110px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Victus</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 5</p>
@@ -417,7 +491,7 @@
                         
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="imagesvictus4.jpeg" alt="" style="width: 120px;" class="mt-2 ml-3 ">
+                            <img src="imagesvictus4.jpeg" alt="" style="width: 120px; height: 110px; border-radius: 10px;" class="mt-2 ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">Noutbook Hp Victus</p>
                         <p class="has-text-info ml-3 mb-3" style="display: flex; justify-content: center;">Protsesr:intel core 7</p>
@@ -437,7 +511,7 @@
                     <div class="box" id="macbook">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="shopping1.avif" alt="" style="width: 120px; height: 110px;" class=" ml-3 ">
+                            <img src="shopping1.avif" alt="" style="width: 120px; height: 110px; border-radius: 10px;" class=" ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">MacBook pro</p>
                         <h2 class="has-text-success is-size-6" style="display: flex; justify-content: center;">Narxi: 18 700 000 so'm</h2>
@@ -451,7 +525,7 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="shopping2.avif" alt="" style="width: 120px; height: 110px;" class=" ml-3 ">
+                            <img src="shopping2.avif" alt="" style="width: 120px; height: 110px; border-radius: 10px;" class=" ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">MacBook</p>
                         <h2 class="has-text-success is-size-6" style="display: flex; justify-content: center;">Narxi: 8 500 000 so'm</h2>
@@ -465,7 +539,7 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="imagesmac3.jpeg" alt="" style="width: 120px; height: 110px;" class=" ml-3 ">
+                            <img src="imagesmac3.jpeg" alt="" style="width: 120px; height: 110px; border-radius: 10px;" class=" ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">MacBook Neo</p>
                         <h2 class="has-text-success is-size-6" style="display: flex; justify-content: center;">Narxi: 11 500 000 so'm</h2>
@@ -479,7 +553,7 @@
                     <div class="box">
                         <h5 class="has-text-success" style="display: flex; justify-content: center;">Saytda mavjud (Sotuvda bor)</h5>
                         <div style="display: flex; justify-content: center;">
-                            <img src="imagesmac4.jpeg" alt="" style="width: 120px; height: 110px;" class=" ml-3 ">
+                            <img src="imagesmac4.jpeg" alt="" style="width: 120px; height: 110px; border-radius: 10px;" class=" ml-3 ">
                         </div>
                         <p class="has-text-link is-size-10 ml-3 " style="display: flex; justify-content: center;">MacBook M1</p>
 
@@ -491,7 +565,7 @@
                 </div>
             </div>
 
-
+            
 
             <hr>
 
